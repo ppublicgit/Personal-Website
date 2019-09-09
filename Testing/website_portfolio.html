@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="css/website_test_1.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="container-fluid">
+    <ul class="nav navbar-nav">
+      <li><a href="website_home.html">Home</a></li>
+      <li><a href="website_resume.html">Experience</a></li>
+      <li><a href="website_skills.html">Skills</a></li>
+      <li><a href="website_hobbies.html">Hobbies</a></li>
+      <li><a class="active", href="website_portfolio.html">Portfolio</a></li>
+      <li><a href="website_contact.html">Contact</a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container fill">
+  <h2>My Portfolio</h2>
+  <p>Here is a small collection summarizing some of the work I have completed in my personal time as well as during my work Experience
+  You can find some of the source code for the projects on my github (<a href="https://www.github.com/ppublicgit">ppublicgit</a>).
+  </p>
+  <ul class="nav nav-pills">
+    <li class="active"><a data-toggle="pill" href="#personal">Python Projects</a></li>
+    <li><a data-toggle="pill" href="#snl">SNL</a></li>
+    <li><a data-toggle="pill" href="#asu">ASU</a></li>
+    <li><a data-toggle="pill" href="#lbnl">LBNL</a></li>
+    <!--<li><a data-toggle="pill" href="#other">Other Code</a></li>-->
+  </ul>
+
+  <div class="tab-content">
+    <div id="personal" class="tab-pane fade in active">
+      <h3>Python Programming Projects</h3>
+      <div class="container">
+        <p>A small example of code I have written in python in my free time to solve problems of personal interest.</p>
+        <div class="panel-group" id="accordionpython">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionpython" href="#collapsefinance">Financial Modeling</a>
+              </h4>
+            </div>
+            <div id="collapsefinance" class="panel-collapse collapse in">
+              <div class="panel-body">Write here</div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionpython" href="#collapseblackjack">Blackjack Card Counting</a>
+              </h4>
+            </div>
+            <div id="collapseblackjack" class="panel-collapse collapse">
+              <div class="panel-body">blackjack</div>
+            </div>
+          </div>
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h4 class="panel-title">
+                <a data-toggle="collapse" data-parent="#accordionpython" href="#collapseml">Machine Learning</a>
+              </h4>
+            </div>
+            <div id="collapseml" class="panel-collapse collapse">
+              <div class="panel-body">machine learning</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="snl" class="tab-pane fade">
+      <h3>Sandia National Laboratories (SNL)</h3>
+      <div class="container">
+        <p>I had two major stints at Sandia National Laboratories. I was originally an intern,
+        following completion of my Bachelor's Degree in Physics from ASU. I then returned as
+        a private contractor to continue my work and research after an extended trip abroad. As an
+        intern, I was tasked with creating a Graphical User Interface (GUI) in MATLAB for
+        test equipment and collecting data. I spent several months designing the GUI and setting up the
+        various protocols used for communicating with all the instruments in the lab. The goal of the project
+        was to create a solenoid pressure system to simulate an engine's cycle to extend and further the research
+        being done in the lab into nozzle spray characteristics. By the end of the internship I had completed a
+        a working GUI that had full, automated control with all the experiment's instruments as well as an initial
+        visualization of each run's data and saving said data. The instrument communication was built primarily on
+        object-oriented-programming, allowing future users an easy means for updating and upgrading the communications.
+        A link to a pdf for the research paper and poster for the internship are provided below.</p>
+        <p>When I returned to Sandia as a private contractor, I was tasked with creating a GUI in LabVIEW for a different
+        experiment, as well as updating the MATLAB GUI I had previously designed. I added several new features to the MATLAB
+        GUI to improve its efficiency and user satisfaction. I also spent some time training some of my coworkers how to code
+        in MATLAB as well as in GUI control and maintenance. The LabVIEW GUI was trickier than the MATLAB GUI as it had multiple
+        data collection speeds, times of interest and required precise timing and synchronization between high and low speed data
+        acquisition units. Eventually, I was able to implement an advanced system with precise digital triggering timing to
+        synchronize all data acquistion. I also trained fellow lab workers in LabVIEW to facilitate ease of use and understanding for
+        the GUI</p>
+        <p>Lastly, I collected data using my MATLAB GUI in various different pressure system environments to research the affects of
+          a variable pressure on nozzle spray characteristics. Data was collected for the pressure of the system, as well as high-speed
+          imaging of the bubble characteristics inside an injector nozzle in order to investigate performance. I generated code in MATLAB
+          to perform high-speed image processing and recognition to determine how the bubbles in the nozzle were affected by the pressure
+          cycling in the system. I then visualized the data in MATLAB and authored a paper on the topic with the assistance of my principal
+          investigator/supervisor and colleagues. The paper is currently pending publication.
+        <ul>
+          <li><a href="images/sandiarealpaper.pdf" target="_blank">Sandia First Authorship Paper(not active yet)</a></li>
+          <li><a href="images/sandiapaper.pdf" target="_blank">Sandia Intern Research Paper</a></li>
+          <li><a href="images/sandiaposter.pdf" target="_blank">Sandia Intern Research Poster</a>.</li>
+        </ul>
+      </div>
+    </div>
+    <div id="asu" class="tab-pane fade">
+      <h3>Arizona State University (ASU)</h3>
+      <div class="container">
+        <p>During my junior and senior years at Arizona State University, I worked as an undergraduate
+        research assistant in an astrophysics lab. The position doubled as a job and as a class for me as it
+        allowed me to complete my honor's thesis (required for graduation for Barrett the Honor's College).
+        I worked on the design, construction and testing of a low temperature (~2.5K) cryostat. It was similar to the
+        work I completed at Lawrence Berkeley National Lab, but this time I was able to test and characterize the noise
+        of microwave kinetic inductance inductors(MKIDs). My honor's thesis focused on the analysis of the MKIDs noise
+        data. I used python to automate the data collection from the MKIDs. The MKIDs were brought down to a temperature of
+        2.9K and then a vector network analyzer (VNA) was used to send signals to the MKIDs and to record their responses.
+        Optical fiber was ran from the VNA outside the vessel to the MKID inside to limit thermal heating from conduction, as
+        copper wiring would have heated the MKIDs to much higher than 2.9K. The collected data was analzed in python using various
+        mathematics and physics techniques and equations to characterize the noise of the MKIDs. The results of the research and
+        the thesis can be viewed in the link's below.</p>
+        <ul>
+          <li><a href="images/asupaper.pdf" target="_blank">ASU Honor's Thesis</a></li>
+          <li><a href="images/asuposter.pdf" target="_blank">ASU Research Poster</a>.</li>
+        </ul>
+      </div>
+    </div>
+    <div id="lbnl" class="tab-pane fade">
+      <h3>Lawrence Berkeley National Lab (LBNL)</h3>
+      <div class="container">
+        <p>As a junior in college I spent my summer as a research intern at LBNL.
+          My work at LBNL focused on the design and construction of a cryostat (low temperature, low pressure vessel
+          used to test superconducting detectors). In particular, I was tasked with designing and constructing the milliKelvin stage,
+          to be used a as a testbed for research and development of detectors to be used to observe microwave radiation from space. My work
+          mainly consisted of three different areas while at LBNL. The first was CAD modeling. I used SolidWorks and other tools to design
+          various parts for the system as well as to create the engineering drawings we sent to machinists to create said parts. I also was a part
+          of the review process for quality control of incoming and outgoing drawings and parts. Phase two of my research was constructing the apparatus itself.
+          This consisted of installing the parts upon arrival and researching proper material and equipment needed for experimental setup and data collection.
+          The last portion of the research was testing the vessel. Not all the parts were able to be added by the time I left due to long lead times on the
+          delivery of some parts, but I was able to successfully test the performance of what had arrived. I created code in python to communicate with
+          an assortment of sensors and detectors to automate the data collection and subsequently used code in python to analyze the outputs. The vessel passed
+          all of its tests.<p>
+            <ul>
+              <li><a href="images/lbnlpaper.pdf" target="_blank">LBNL Research Paper</a></li>
+              <li><a href="images/lbnlposter.pdf" target="_blank">LBNL Research Poster</a>.</li>
+            </ul>
+      </div>
+    </div>
+    <!--
+    <div id="other" class="tab-pane fade">
+      <h3>Other Programming Projects</h3>
+    </div>
+  -->
+  </div>
+</div>
+
+</body>
+</html>
