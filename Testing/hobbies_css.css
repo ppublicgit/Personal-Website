@@ -1,0 +1,38 @@
+.hobbies h2 {
+  color:black;
+  padding-top:30px;
+}
+
+.hobbies p {
+  color:black;
+  padding-bottom:30px;
+}
+
+img {
+  border: 1px solid #black;
+  border-radius: 4px;
+  box-shadow: 0 0 10px 5px rgb(158, 159, 157);
+  padding: 10px;
+  margin:auto;
+  display: block;
+  max-width: 100%; /* change this to pixel of width of smallest image */
+  height: auto;
+}
+
+img:hover {
+  box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+.caption {
+  padding-top: 10px;
+  text-align: center;
+}
+
+.background {
+/*  background-color: green; */
+}
+
+.fullscreen {
+  height : 100vh;
+  width : 100%
+}
