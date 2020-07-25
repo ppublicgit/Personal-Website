@@ -1,0 +1,31 @@
+<?php
+if (isset($_POST['submit'])) {
+    $to = 'paul@paulabers.com';
+    $subject = 'Form to email message';
+    $sender = $_POST['name'];
+    $senderEmail = $_POST['senderemail'];
+    $message = $_POST['message'];
+    $emailbody = 'Name: ' . $sender . "\r\n\r\n";
+    $emailbody .= 'Email: ' . $senderEmail . "\r\n\r\n";
+    $emailbody .= 'Message: ' . $message;
+
+    $headers = "From: paul@paulabers.com\r\n";
+    $headers .= 'Content-Type: text/plain; charset=utf-8';
+    $email = filter_input(INPUT_POST, 'senderemail', FILTER_VALIDATE_EMAIL);
+    if ($email) {
+      $headers .= "\r\nReply-To: $email";
+    }
+
+    $success = mail($to, $subject, $emailbody, $headers);
+}
+?>
+
+<body>
+  <?php if (isset($success) && $success) {?>
+    <h1>Thanky You</h1>
+    <p>Your message has been sent.</p>
+  <?php } else { ?>
+    <h1>Oops!</h1>
+    <p>Sorry, there was a problem sending your message.</p>
+  <?php } ?>
+</body>
