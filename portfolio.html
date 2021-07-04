@@ -22,265 +22,362 @@
         <li><a href="contact.html">Contact</a></li>
       </ul>
   </nav>
-<div class="my-funky-img-box fill">
-   <div class="col-bdr left-border-col">
-   </div>
-<div style="padding-top: 30px; padding-bottom:30px" class="container fill">
-  <h2>My Portfolio</h2>
-  <p>Here is a small collection summarizing some of the work I have completed in my personal time as well as during my work Experience
-  You can find some of the source code for the projects on my github (<a href="https://www.github.com/ppublicgit">ppublicgit</a>).
-  </p>
-
-  <ul class="nav nav-pills">
-    <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#personal">Python Projects</a></li>
-    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#snl">SNL</a></li>
-    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#asu">ASU</a></li>
-    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#lbnl">LBNL</a></li>
-    <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#other">Other Code</a></li>
-  </ul>
-
-  <div class="tab-content" style="padding-top:10px">
-    <div id="personal" class="tab-pane container active">
-      <h3>Python Programming Projects</h3>
-      <div id="accordion">
-          <div class="card">
-            <div class="card-header">
-              <a class="card-link" data-toggle="collapse" href="#collapsefinance">
-                Finance Models
-              </a>
-            </div>
-            <div id="collapsefinance" class="collapse show" data-parent="#accordion">
-              <div class="card-body">
-              <p>This project is ongoing. I have posted some of my code to my GitHub (<a href="https://www.github.com/ppublicgit/Finance">finance repository</a>).
-                 The code is all first version tests of what I want to implement. Due to the nature of stock trading, I have not shared all my code, ideas or final versions,
-                 only the early versions codes and the simple concept ideas, mainly for back-testing purposes.</p>
-              <p>I find the stock market an intriguing system
-              of global interaction. Many common mathematics and even physics processes
-              surprisngly show up in financial markets. One of the most important and famous of these patterns
-              is the price of stocks. Louis Bachelier, a French mathematician, is credited with the discovery of the
-              brownian motion of stock prices in his Ph.D. dissertation, <a href="https://en.wikipedia.org/wiki/Louis_Bachelier">"The Theory of Speculation"</a>.
-              The book by Burton Malkiel, "A Random Walk Down Wall Street", brought this revelation and theory to the public. Nowadays,
-              with the advent of faster and faster computers and simple, easy to use programming languages, the popularity of quantitative trading has taken off.
-              Things such as high-frequency trading and statistical arbitrage have become common practices for hedge funds and day traders. Furthermore, large data
-              facilitates traders in formulating trading ideas and back-testing their performance against historical data.</p>
-              <p>I decided to dip my feet into quantitative trading to learn more about the subject and to
-              practice my Python and math skills. I read several books, including my favorite, by E.P. Chan, "Algorithmic Trading," to learn more on the
-              topic and improve my understanding of the field. Following this guide, as well as posts on various blogs and forums, I created my own
-              tools for trading and finding edges in the market. Among these tools, I have a webscraper for Yahoo Finance key statistics, Twitter and
-              Stocktwit that collects data via an input of stock symbol and returns a pandas dataframe of important information. I also have various tests for
-              cointegration (Hurst exponent, ADF, Johansen and Variance Ratio) and an asset allocation optimizer (Kelly formula) given stock symbols as well. </p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <a class="collapsed card-link" data-toggle="collapse" href="#collapseblackjack">
-              Blackjack Card Counting Simulation
-            </a>
-            </div>
-            <div id="collapseblackjack" class="collapse" data-parent="#accordion">
-              <div class="card-body">
-              <p>Beating the house by card counting and winning millions in a single night of blackjack is an
-              exciting dream. How feasible is this scheme really? Programming allows you to simulate and solve the question once and for all.</p>
-              <p>I had not used Python's class structure before and thought it would be a great way to get
-              practice with object orientated programming (OOP). The code I created is a little rough, as it was my first
-              ever attempt at OOP in Pytohn, but while it is not pretty, it gets the job done. I developed Python code to
-              simulate multiple hands of blackjack to see if counting cards was an effective and reliable means of making money.
-              I used oop to create classes for cards, hands, decks and a game of blackjack as well. The user can call on the blackjack
-              class and set the rules for the game. This includes if the dealer hits on a soft 17, how many decks the dealer uses, the blackjack
-              payout rate and more. The code then uses the strategy tables that fit with the rules chosen by the user, and simulates whatever
-              number of hands the user specifies. The code and some simple statistical analysis of a few simulations can be found on my
-              github (<a href="https://www.github.com/ppublicgit/Card-Games">Blackjack Simulation Repository</a>)</p>
-              <p>What I found was that the margins for error in card counting are incredibly slim. First, the blackjack payout mus be strong,
-              too small and the house always can expect to win. Another key rule is the depth of penetration into the deck (this is the point
-              at which the dealer reshuffles all the cards, resetting the count). For the card counter to expect to win money, he/she needs a large
-              amount of capital (as a serious drawdown period must be survivable, as well as enough money to place large bets when the count is in the
-              players favor) and must never make a mistake on strategy or the count. To make matters worse, most casinos these days have
-              an eye-in-the-sky watching all players and looking for counters. To hide that one is counting cards,
-              one must occasionally bet against the count to better avoid detection. The prospects of winning money via
-              card counting is nigh on impossible. Even if one plays perfectly, the winnings are still quite slim. The best method, and in my
-              humble opinion the only real method, to winning lots of money counting cards requires a team of counters. The team could have several people
-              sit at tables and bet small the whole time to get a count of the table, and then signal to a teammate to come into the table whenever the count
-              is strongly in the player's favor. That way, the player can bet big and often early in the game, without having to absorb the losses while trying to establish
-              and time the count. This brings in more risk of being caught, and the winnings are split among a larger group. In the end, there are probably
-              easier means to obtain financial wealth than the high risk environment of card counting and casino blackjack.</p>
-              </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <a class="collapsed card-link" data-toggle="collapse" href="#collapseml">
-                Machine Learning
-              </a>
-            </div>
-            <div id="collapseml" class="collapse" data-parent="#accordion">
-              <div class="card-body">
-                <p>I have completed several of the common beginner machine learning problems and uploaded the results to my
-                github (<a href="https://www.github.com/ppublicgit/machinelearning">Machine Learning Repository</a>).
-                These problems included the Iris dataset, Boston housing dataset and a height/weight predictor. The
-                results and code are displayed using jupyter notebooks. The problems were good practice for implementing
-                some of the common techniques I have learned through various online courses and through technical literature.
-                The main packages used were pandas and scikit-learn. I demonstrated the effectiveness of several machine learning techniques,
-                such as lasso and ridge regression and random forests, and I compared their performances.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-    </div>
-    <div id="snl" class="tab-pane container fade">
-      <h3>Sandia National Laboratories (SNL)</h3>
-      <div class="container">
-        <p>I had two major stints at Sandia National Laboratories in Livermore, CA: as an inern following the completion
-          of my BS in Physics from Arizona State University (ASU) and then as a private contractor to continue my work and research after an extended trip abroad. As an
-        intern, I was tasked with creating a Graphical User Interface (GUI) in MATLAB for
-        test equipment and collecting data. I spent several months designing the GUI and setting up the
-        various protocols used for communicating with all the instruments in the research lab. The goal of the project
-        was to create a solenoid pressure system to simulate an engine's cycle to extend and further the research
-        being done in the lab into nozzle spray characteristics. By the end of the internship I had completed
-        a working GUI that had full, automated control with all the experimental instruments and the initial
-        visualization of each run's data that was saved for further analysis. The instrument communication was built primarily on
-        object-oriented-programming, allowing future users an easy means for updating and upgrading the communications.
-        Links to a PDF for the internship research paper and poster are provided below.</p>
-        <p>As a private contractor, I was tasked with creating a GUI in LabVIEW for a different
-        experiment, as well as updating the MATLAB GUI I had previously designed. I added several new features to the MATLAB
-        GUI to improve its efficiency and user satisfaction. I also spent time training my coworkers how to code
-        in MATLAB and in GUI control and maintenance. The LabVIEW GUI was trickier than the MATLAB GUI as it had multiple
-        data collection speeds and times of interest and required precise timing and synchronization between high and low speed data
-        acquisition units. Eventually, I was able to implement an advanced system with precise digital triggering timing to
-        synchronize all data acquistion. I also trained fellow lab workers in LabVIEW to facilitate ease of use and understanding for
-        the GUI</p>
-        <p>Lastly, I collected data using my MATLAB GUI in different pressure system environments to research the effects of
-          a variable pressure on nozzle spray characteristics. Data was collected for the pressure of the system, as well as high-speed
-          imaging of the bubble characteristics inside an injector nozzle in order to investigate performance. I generated code in MATLAB
-          to perform high-speed image processing and recognition to determine how the bubbles in the nozzle were affected by the pressure
-          cycling in the system. I then visualized the data in MATLAB and authored a paper on the topic with the assistance of my principal
-          investigator/supervisor and colleagues. The paper is currently pending publication.
-        <ul>
-          <li><a href="images/portfolio/sandia_research_paper.pdf" target="_blank">Sandia First Authorship Paper</a></li>
-          <li><a href="images/portfolio/sandiapaper.pdf" target="_blank">Sandia Intern Research Paper</a></li>
-          <li><a href="images/portfolio/sandiaposter.pdf" target="_blank">Sandia Intern Research Poster</a>.</li>
-        </ul>
+  <div class="my-funky-img-box fill">
+      <div class="col-bdr left-border-col">
       </div>
-    </div>
-    <div id="asu" class="tab-pane container fade">
-      <h3>Arizona State University (ASU)</h3>
-      <div class="container">
-        <p>During my junior and senior years at Arizona State University, I worked as an undergraduate
-        research assistant in an astrophysics lab. The position doubled as a job and a class and
-        allowed me to complete my honor's thesis (required for graduation from Barrett the Honor's College at ASU).
-        I worked on the design, construction and testing of a low temperature (~2.5K) cryostat. It was similar to
-        work I completed at Lawrence Berkeley National Lab, but this time I was able to test and characterize the noise
-        of microwave kinetic inductance inductors(MKIDs). My honor's thesis focused on the analysis of the MKIDs noise
-        data. I used Python to automate the data collection from the MKIDs. The MKIDs were brought down to a temperature of
-        2.9K and then a vector network analyzer (VNA) was used to send signals to the MKIDs and to record their responses.
-        Optical fiber was run from the VNA outside the vessel to the MKID inside to limit thermal heating from conduction, as
-        copper wiring would have heated the MKIDs to much higher than 2.9K. The collected data was analyzed in Python using various
-        mathematics and physics techniques and equations to characterize the noise of the MKIDs. The results of the research and
-        the thesis can be viewed in the link's below.</p>
-        <ul>
-          <li><a href="images/portfolio/asupaper.pdf" target="_blank">ASU Honor's Thesis</a></li>
-          <li><a href="images/portfolio/asuposter.pdf" target="_blank">ASU Research Poster</a>.</li>
-        </ul>
-      </div>
-    </div>
-    <div id="lbnl" class="tab-pane container fade">
-      <h3>Lawrence Berkeley National Lab (LBNL)</h3>
-      <div class="container">
-        <p>After my junior year in college I spent my summer as a research intern at LBNL in Berkeley, CA.
-          My work focused on the design and construction of a cryostat (low temperature, low pressure vessel
-          used to test superconducting detectors). I was tasked with designing and constructing the milliKelvin stage
-          used as a testbed for research and development of detectors to observe microwave radiation from space. My work
-          mainly consisted of three different areas. The first was CAD modeling. I used SolidWorks and other tools to design
-          various parts for the system and to create the engineering drawings sent to machinists to create parts. I also was a part
-          of the review process for quality control of incoming and outgoing drawings and parts. Phase two of my research was constructing the apparatus itself.
-          This consisted of installing the parts upon arrival and researching the proper materials and equipment needed for experimental setup and data collection.
-          The last portion of the research was testing the vessel. Not all the parts were able to be added by the time I completed the internship due to long lead times
-          of some parts, but I was able to successfully test the performance of what had arrived. I created code in Python to communicate with
-          an assortment of sensors and detectors to automate the data collection and subsequently used code in Python to analyze the outputs. The vessel passed
-          all tests.<p>
-            <ul>
-              <li><a href="images/portfolio/lbnlpaper.pdf" target="_blank">LBNL Research Paper</a></li>
-              <li><a href="images/portfolio/lbnlposter.pdf" target="_blank">LBNL Research Poster</a>.</li>
-            </ul>
-      </div>
-    </div>
+      <div class="container fill" style="padding-right:60px; padding-top:30px; padding-left:60px; padding-bottom:60px">
+          <h2>My Portfolio</h2>
+          <p>Here is a small collection summarizing some of the work I have completed in my personal time as well as during my work experience and schooling.
+              You can find some of the source code for the projects on my github (<a href="https://www.github.com/ppublicgit">ppublicgit</a>).
+          </p>
 
-    <div id="other" class="tab-pane container fade">
-      <h3>Other Programming Projects</h3>
-      <div id="accordion2">
-          <div class="card">
-            <div class="card-header">
-              <a class="card-link" data-toggle="collapse" href="#collapseHTMLCSS">
-                HTML/CSS
-              </a>
-            </div>
-            <div id="collapseHTMLCSS" class="collapse show" data-parent="#accordion2">
-              <div class="card-body">
-              <p> I decided I wanted to learn HTML/CSS and what better way to learn than applying
-                the code to something. Which project did I build with HTML/CSS? Why this very website.
-                I designed this website from scratch after reading through some online tutorial, texts,
-                stack overflow and looking at other websites for inspiration. I am quite pleased with
-                how it all turned out. Not bad for my first ever HTML/CSS project. And it only took a couple
-                weeks from no experience to boot. You can find all my code for this website on my github page
-                (<a href="htttps://github.com/ppublicgit/Personal-Website">github.com/ppublicgit/Personal-Website</a>).
-                I hope you have enjoyed perusing my website.
-              </p>
+          <ul class="nav nav-pills">
+              <li class="nav-item"><a class="nav-link active" data-toggle="pill" href="#personal">UAH</a></li>
+              <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#snl">SNL</a></li>
+              <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#asu">ASU</a></li>
+              <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#lbnl">LBNL</a></li>
+              <li class="nav-item"><a class="nav-link" data-toggle="pill" href="#other">Personal Projects</a></li>
+          </ul>
+
+          <div class="tab-content" style="padding-top:10px">
+              <div id="personal" class="tab-pane container active">
+                  <h3>University of Alabama Huntsville (UAH)</h3>
+                  <div id="accordion">
+                      <div class="card">
+                          <div class="card-header">
+                              <a class="collapsed card-link" data-toggle="collapse" href="#collapsecs637">
+                                  CS 637 Deep Learning
+                              </a>
+                          </div>
+                          <div id="collapsecs637" class="collapse" data-parent="#accordion">
+                              <div class="card-body">
+                                  <p>
+                                      CS 637 had several homework projects. My github has a repository for the
+                                      work performed in completing the homework assignments.
+                                      <a href="https://github.com/ppublicgit/CS637">https://github.com/ppublicgit/CS637</a>
+                                  </p>
+                                  <p>
+                                      The first project was to write
+                                      our own back propagating neural network. The network had to be able
+                                      to accept different activation functions, shapes and cost functions
+                                      at initialization. The code can be viewed on the github link under HW1.
+                                  </p>
+                                  <p>
+                                      The second project was to use pytorch to classify the CIFAR 10 image
+                                      dataset. The code and results can be viewed in the github link
+                                      under HW2.
+                                  </p>
+                                  <p>
+                                      The third project was open ended. I chose to create a recurrent neural network (rnn)
+                                      to learn to write Shakespeare. In my first attempt I hand coded a vanilla rnn. Its
+                                      performance was fairly weak, though not surprising. The vanilla rnn has no 'memory'
+                                      and so it fails to properly write Shakespeare. It is unaware of any character that is
+                                      not immediately preceeding it so the text is jumbled. I then used pytorch to create
+                                      a multilayer long short term memory (LSTM) network for the problem. After some
+                                      training, the output is fairly believable. The text is formatted correctly and reads
+                                      like a screenplay. Sentence structure is evident and proper headers for each
+                                      actor is present. The only deficiency is the story does not make sense. Each character's
+                                      dialogue does not match nor respond in kind to each other's dialogue. This is not surprising
+                                      as the network learning semantic meaning is a much more difficult task that would require a
+                                      larger network, more training and more training data.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header">
+                              <a class="collapsed card-link" data-toggle="collapse" href="#collapsecs687">
+                                  CS 687 Database Systems
+                              </a>
+                          </div>
+                          <div id="collapsecs687" class="collapse" data-parent="#accordion">
+                              <div class="card-body">
+                                  <p>
+                                      The first project for CS 687 required us to create our own, miniature database and implement
+                                      a simple GUI to interact with it. The requirements were to write a sql script to generate the database
+                                      and a GUI to then interact with the database. The code I made to support this project is found on my github.
+                                      <a href="https://github.com/ppublicgit/CS687">https://github.com/ppublicgit/CS687</a>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header">
+                              <a class="collapsed card-link" data-toggle="collapse" href="#collapse588">
+                                  CS 588 Big Data Fundamentals
+                              </a>
+                          </div>
+                          <div id="collapse588" class="collapse" data-parent="#accordion">
+                              <div class="card-body">
+                                  <p>
+                                      CS 588 had several projects I completed over the course of the semester. The third homwework assignment
+                                      was to perform exploratory data analysis on several datasets. The work can be found on github. In particular
+                                      1.ipynb. <a href="https://github.com/ppublicgit/CS588-HW3">https://github.com/ppublicgit/CS588-HW3</a>
+                                  </p>
+                                  <p>
+                                      The second homework assignment was to use several different clustering techniques on the famous
+                                      indian and iris datasets. The results are on github. The bulk of the work can be seen the file HW4.ipynb.
+                                      <a href="https://github.com/ppublicgit/588HW4">https://github.com/ppublicgit/588HW4</a>
+                                  </p>
+                                  <p>
+                                      The last project was more free form. We had to pick any topic of interest and apply big data practices towards the
+                                      topic. I chose to look into basketball data to see if it was possible to predict game outcomes based on a teams'
+                                      averages over the season.
+                                      <a href="https://github.com/ppublicgit/Basketball">https://github.com/ppublicgit/Basketball</a>.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header">
+                              <a class="collapsed card-link" data-toggle="collapse" href="#collapse641">
+                                  CS 641 Data Mining
+                              </a>
+                          </div>
+                          <div id="collapse641" class="collapse" data-parent="#accordion">
+                              <div class="card-body">
+                                  <p>
+                                      Like many other classes there were several projects during the semester. CS 641 focused on data mining.
+                                      The second homework was a task to classify areas of land as either rainfed or irrigated. In the end I used
+                                      a random forest to perform the task. The files are found in the folder homework 2 and the main report is
+                                      in the file model.ipynb.
+
+                                      The second project was to determine cancerous from non cancerous images. In the end I used principal component analysis,
+                                      along with an SVM learner to classify the data. The dataset was also unbalanced, thus
+                                      I used a different class weighting to improve the f-score of the data instead of merely focusing on accuracy.
+
+                                      <a href="https://github.com/ppublicgit/CS-641">https://github.com/ppublicgit/CS-641</a>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <a class="collapsed card-link" data-toggle="collapse" href="#collapseSQL">
-              SQL
-            </a>
-            </div>
-            <div id="collapseSQL" class="collapse" data-parent="#accordion2">
-              <div class="card-body">
-              <p>Another simple skill I decided to learn was SQL. I did so by completing several MOOCs online
-              as well as following along a book on SQL programming. I used Alen Beaulieu's book, "Learning SQL".
-              SQL is a rather simple language to learn to be honest, and I do not have much daily use for it but
-              it was still fun to learn. You can see some of the practice problems I worked through on my github
-              page (<a href="https://github.com/ppublicgit/SQL_Queries">github.com/ppublicgit/SQL_Queries</a>)</p>
+              <div id="snl" class="tab-pane container fade">
+                  <h3>Sandia National Laboratories (SNL)</h3>
+                  <div class="container">
+                      <p>I had two major stints at Sandia National Laboratories in Livermore, CA: as an inern following the completion
+                          of my BS in Physics from Arizona State University (ASU) and then as a private contractor to continue my work and research after an extended trip abroad. As an
+                          intern, I was tasked with creating a Graphical User Interface (GUI) in MATLAB for
+                          test equipment and collecting data. I spent several months designing the GUI and setting up the
+                          various protocols used for communicating with all the instruments in the research lab. The goal of the project
+                          was to create a solenoid pressure system to simulate an engine's cycle to extend and further the research
+                          being done in the lab into nozzle spray characteristics. By the end of the internship I had completed
+                          a working GUI that had full, automated control with all the experimental instruments and the initial
+                          visualization of each run's data that was saved for further analysis. The instrument communication was built primarily on
+                          object-oriented-programming, allowing future users an easy means for updating and upgrading the communications.
+                          Links to a PDF for the internship research paper and poster are provided below.</p>
+                      <p>As a private contractor, I was tasked with creating a GUI in LabVIEW for a different
+                          experiment, as well as updating the MATLAB GUI I had previously designed. I added several new features to the MATLAB
+                          GUI to improve its efficiency and user satisfaction. I also spent time training my coworkers how to code
+                          in MATLAB and in GUI control and maintenance. The LabVIEW GUI was trickier than the MATLAB GUI as it had multiple
+                          data collection speeds and times of interest and required precise timing and synchronization between high and low speed data
+                          acquisition units. Eventually, I was able to implement an advanced system with precise digital triggering timing to
+                          synchronize all data acquistion. I also trained fellow lab workers in LabVIEW to facilitate ease of use and understanding for
+                          the GUI</p>
+                      <p>Lastly, I collected data using my MATLAB GUI in different pressure system environments to research the effects of
+                          a variable pressure on nozzle spray characteristics. Data was collected for the pressure of the system, as well as high-speed
+                          imaging of the bubble characteristics inside an injector nozzle in order to investigate performance. I generated code in MATLAB
+                          to perform high-speed image processing and recognition to determine how the bubbles in the nozzle were affected by the pressure
+                          cycling in the system. I then visualized the data in MATLAB and authored a paper on the topic with the assistance of my principal
+                          investigator/supervisor and colleagues. The paper is currently pending publication.
+                          <ul>
+                              <li><a href="images/portfolio/sandia_research_paper.pdf" target="_blank">Sandia First Authorship Paper</a></li>
+                              <li><a href="images/portfolio/sandiapaper.pdf" target="_blank">Sandia Intern Research Paper</a></li>
+                              <li><a href="images/portfolio/sandiaposter.pdf" target="_blank">Sandia Intern Research Poster</a>.</li>
+                          </ul>
+                  </div>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <a class="collapsed card-link" data-toggle="collapse" href="#collapsebash">
-                Bash Scripts
-              </a>
-            </div>
-            <div id="collapsebash" class="collapse" data-parent="#accordion2">
-              <div class="card-body">
-                <p>When setting up my laptop to run on linux, and while reading a textbook on the Linux OS, I decided
-                to also learn some bash scripting. I read and worked through most of the problems of Machtelt Garrels' book,
-                "Bash Guide for Beginners". It had some fun probably to work through and spent a lot of time on awk, sed and other
-                common tools in the bash environment. Definitely worth a read if you ever decide to run Linux. My work through the
-                practice problems can be found on my github page (<a href="https://github.com/ppublicgit/Bash-Scripts">github.com/ppublicgit/Bash-Scripts</a>).</p>
+              <div id="asu" class="tab-pane container fade">
+                  <h3>Arizona State University (ASU)</h3>
+                  <div class="container">
+                      <p>During my junior and senior years at Arizona State University, I worked as an undergraduate
+                          research assistant in an astrophysics lab. The position doubled as a job and a class and
+                          allowed me to complete my honor's thesis (required for graduation from Barrett the Honor's College at ASU).
+                          I worked on the design, construction and testing of a low temperature (~2.5K) cryostat. It was similar to
+                          work I completed at Lawrence Berkeley National Lab, but this time I was able to test and characterize the noise
+                          of microwave kinetic inductance inductors(MKIDs). My honor's thesis focused on the analysis of the MKIDs noise
+                          data. I used Python to automate the data collection from the MKIDs. The MKIDs were brought down to a temperature of
+                          2.9K and then a vector network analyzer (VNA) was used to send signals to the MKIDs and to record their responses.
+                          Optical fiber was run from the VNA outside the vessel to the MKID inside to limit thermal heating from conduction, as
+                          copper wiring would have heated the MKIDs to much higher than 2.9K. The collected data was analyzed in Python using various
+                          mathematics and physics techniques and equations to characterize the noise of the MKIDs. The results of the research and
+                          the thesis can be viewed in the link's below.</p>
+                      <ul>
+                          <li><a href="images/portfolio/asupaper.pdf" target="_blank">ASU Honor's Thesis</a></li>
+                          <li><a href="images/portfolio/asuposter.pdf" target="_blank">ASU Research Poster</a>.</li>
+                      </ul>
+                  </div>
               </div>
-            </div>
-          </div>
-          <div class="card">
-            <div class="card-header">
-              <a class="collapsed card-link" data-toggle="collapse" href="#collapseR">
-                R
-              </a>
-            </div>
-            <div id="collapseR" class="collapse" data-parent="#accordion2">
-              <div class="card-body">
-                <p>I decided it might be worthwhile to learn some R for statistical analysis at some point. I read through the book, "R for Data Science" by
-                  Hadley Wickham to begin my journey to learn R. I also went through a Udemy course online and did some practice problems in statistical analysis and data exploration.
-                  My work through a sample data set can be found on my github page (<a href="https://github.com/ppublicgit/R_Movies_EDA">github.com/ppublicgit/R_Movies_EDA</a>).
-                </p>
+              <div id="lbnl" class="tab-pane container fade">
+                  <h3>Lawrence Berkeley National Lab (LBNL)</h3>
+                  <div class="container">
+                      <p>After my junior year in college I spent my summer as a research intern at LBNL in Berkeley, CA.
+                          My work focused on the design and construction of a cryostat (low temperature, low pressure vessel
+                          used to test superconducting detectors). I was tasked with designing and constructing the milliKelvin stage
+                          used as a testbed for research and development of detectors to observe microwave radiation from space. My work
+                          mainly consisted of three different areas. The first was CAD modeling. I used SolidWorks and other tools to design
+                          various parts for the system and to create the engineering drawings sent to machinists to create parts. I also was a part
+                          of the review process for quality control of incoming and outgoing drawings and parts. Phase two of my research was constructing the apparatus itself.
+                          This consisted of installing the parts upon arrival and researching the proper materials and equipment needed for experimental setup and data collection.
+                          The last portion of the research was testing the vessel. Not all the parts were able to be added by the time I completed the internship due to long lead times
+                          of some parts, but I was able to successfully test the performance of what had arrived. I created code in Python to communicate with
+                          an assortment of sensors and detectors to automate the data collection and subsequently used code in Python to analyze the outputs. The vessel passed
+                          all tests.<p>
+                          <ul>
+                              <li><a href="images/portfolio/lbnlpaper.pdf" target="_blank">LBNL Research Paper</a></li>
+                              <li><a href="images/portfolio/lbnlposter.pdf" target="_blank">LBNL Research Poster</a>.</li>
+                          </ul>
+                  </div>
               </div>
-            </div>
+
+              <div id="other" class="tab-pane container fade">
+                  <h3>Personal Projects</h3>
+                  <div id="accordion2">
+                      <div class="card">
+                          <div class="card-header">
+                              <a class="card-link" data-toggle="collapse" href="#collapseHTMLCSS">
+                                  Personal Website (HTML/CSS)
+                              </a>
+                          </div>
+                          <div id="collapseHTMLCSS" class="collapse" data-parent="#accordion2">
+                              <div class="card-body">
+                                  <p> I decided I wanted to learn HTML/CSS and what better way to learn than applying
+                                      the code to something. Which project did I build with HTML/CSS? Why this very website.
+                                      I designed this website from scratch after reading through some online tutorial, texts,
+                                      stack overflow and looking at other websites for inspiration. I am quite pleased with
+                                      how it all turned out. Not bad for my first ever HTML/CSS project. And it only took a couple
+                                      weeks from no experience to boot. You can find all my code for this website on my github page
+                                      (<a href="htttps://github.com/ppublicgit/Personal-Website">github.com/ppublicgit/Personal-Website</a>).
+                                      I hope you have enjoyed perusing my website.
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header">
+                              <a class="collapsed card-link" data-toggle="collapse" href="#collapseml">
+                                  Machine Learning (Python)
+                              </a>
+                          </div>
+                          <div id="collapseml" class="collapse" data-parent="#accordion2">
+                              <div class="card-body">
+                                  <p>
+                                      Prior to starting my masters program at UAH, I read and worked through a Stephen Marsland's Machine Learning book.
+                                      I wrote my own takes on several classic machine learning techniques, including svm, random forests, decision trees
+                                      and a multi layer perceptron. At the time I was also reading a fair amount on functional programming
+                                      and so I tried to write all the code functionally. The code is found on my github. The learning algorithms
+                                      are found in the Learners folder and the programs to run and test my algorithms are within the various
+                                      python files at the root directory.
+                                      <a href="https://github.com/ppublicgit/Machine-Learning">https://github.com/ppublicgit/Machine-Learning</a>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header">
+                              <a class="collapsed card-link" data-toggle="collapse" href="#collapsechess">
+                                  Chess (Haskell)
+                              </a>
+                          </div>
+                          <div id="collapsechess" class="collapse" data-parent="#accordion2">
+                              <div class="card-body">
+                                  <p>
+                                      A friend and coworker showed me the Haskell programming language. He also suggested reading the book
+                                      Haskell from First Principles by Chris Allen. I worked through much of the book, played with the
+                                      language and found I really enjoy it. The purity of its functional programming principles present a new
+                                      approach and challenge to writing code. The lack of traditional imperative paradigms such as loops and
+                                      objects at first was difficult to grasp. However, afterwhile I grew to appreciate the beauty and ingenuity
+                                      of recursion. I particularly liked the built in support of list comprehension, functors, applicatives and
+                                      more.
+                                  </p>
+                                  <p>
+                                      I decided to practice my skills with the language I wrote a terminal chess game. The code is on my github.
+                                      I learned a lot during the exercise and grew to truly appreciate Haskell by the time I finished. I do not
+                                      agree with all the decisions I made for the code, but in the end I was happy with the product.
+                                  </p>
+                                  <p>
+                                      <a href="https://github.com/ppublicgit/Haskell-Chess">https://github.com/ppublicgit/Haskell-Chess</a>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header">
+                              <a class="collapsed card-link" data-toggle="collapse" href="#collapsedata">
+                                  Data Structures (C++)
+                              </a>
+                          </div>
+                          <div id="collapsedata" class="collapse" data-parent="#accordion2">
+                              <div class="card-body">
+                                  <p>
+                                      Prior to starting my Masters program I wanted to learn about data structures. Though my university
+                                      also made me take a course on data structures , I feel I learned more on my own. I read through
+                                      a textbook a friend lent me on the subject. It covered all sorts of structures from arrays,
+                                      to linked lists, to hash tables, to general trees and more. I wrote all the data structures
+                                      in C++.
+                                  </p>
+                                  <p>
+                                      <a href="https://github.com/ppublicgit/DataStructuresCPP">https://github.com/ppublicgit/DataStructuresCPP</a>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header">
+                              <a class="collapsed card-link" data-toggle="collapse" href="#collapsebudget">
+                                  Budget (Python)
+                              </a>
+                          </div>
+                          <div id="collapsebudget" class="collapse" data-parent="#accordion2">
+                              <div class="card-body">
+                                  <p>
+                                      I like to keep track of my expenses. I collect the information in an excel spreadsheet with
+                                      various categories for my expenses. I created formatting in the spreadsheet to easily see
+                                      and understand my expenses and income. I also wrote  a python gui to plot my expenses
+                                      to show a general trend for my expenses.
+                                  </p>
+                                  <p>
+                                      <a href="https://github.com/ppublicgit/budget">https://github.com/ppublicgit/budget</a>
+                                  </p>
+                              </div>
+                          </div>
+                      </div>
+                      <div class="card">
+                          <div class="card-header">
+                              <a class="card-link" data-toggle="collapse" href="#collapsefinance">
+                                  Finance Models (Python)
+                              </a>
+                          </div>
+                          <div id="collapsefinance" class="collapse" data-parent="#accordion2">
+                              <div class="card-body">
+                                  <p>This project is ongoing. I have posted some of my code to my GitHub (<a href="https://www.github.com/ppublicgit/Finance">finance repository</a>).
+                                      The code is all first version tests of what I want to implement. Due to the nature of stock trading, I have not shared all my code, ideas or final versions,
+                                      only the early versions codes and the simple concept ideas, mainly for back-testing purposes.</p>
+                                  <p>I find the stock market an intriguing system
+                                      of global interaction. Many common mathematics and even physics processes
+                                      surprisngly show up in financial markets. One of the most important and famous of these patterns
+                                      is the price of stocks. Louis Bachelier, a French mathematician, is credited with the discovery of the
+                                      brownian motion of stock prices in his Ph.D. dissertation, <a href="https://en.wikipedia.org/wiki/Louis_Bachelier">"The Theory of Speculation"</a>.
+                                      The book by Burton Malkiel, "A Random Walk Down Wall Street", brought this revelation and theory to the public. Nowadays,
+                                      with the advent of faster and faster computers and simple, easy to use programming languages, the popularity of quantitative trading has taken off.
+                                      Things such as high-frequency trading and statistical arbitrage have become common practices for hedge funds and day traders. Furthermore, large data
+                                      facilitates traders in formulating trading ideas and back-testing their performance against historical data.</p>
+                                  <p>I decided to dip my feet into quantitative trading to learn more about the subject and to
+                                      practice my Python and math skills. I read several books, including my favorite, by E.P. Chan, "Algorithmic Trading," to learn more on the
+                                      topic and improve my understanding of the field. Following this guide, as well as posts on various blogs and forums, I created my own
+                                      tools for trading and finding edges in the market. Among these tools, I have a webscraper for Yahoo Finance key statistics, Twitter and
+                                      Stocktwit that collects data via an input of stock symbol and returns a pandas dataframe of important information. I also have various tests for
+                                      cointegration (Hurst exponent, ADF, Johansen and Variance Ratio) and an asset allocation optimizer (Kelly formula) given stock symbols as well. </p>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
           </div>
-        </div>
-    </div>
+      </div>
+      <div class="col-bdr right-border-col">
+      </div>
   </div>
-</div>
-<div class="col-bdr right-border-col">
-</div>
-</div>
 </body>
 </html>
